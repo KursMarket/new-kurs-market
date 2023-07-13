@@ -1,0 +1,191 @@
+.js-cart {
+  cursor: pointer;
+}
+.dark_back {
+  background-color: rgba(0,0, 0, 0.5);
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: 1051;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.block_close_button {
+  position: absolute;
+  right: 10px;
+  top: 8px;
+  font-size: 20px;
+  color: #c10000;
+  cursor: pointer;
+}
+.block_close_button:hover {
+  color: #ff0000;
+}
+.buy_block {
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+.buy_block, .buy_block_error {
+  position: relative;
+  max-width: 500px;
+  max-height: 100%;
+  overflow-y: auto;
+}
+.buy_block_error {
+  color: #c10000;
+  font-size: 18px;
+}
+.buy_block label {
+  margin: 0;
+}
+.step_tabs {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  border-bottom: 2px solid #c13ddd;
+}
+.step_tabs > li {
+  padding: 10px;
+  flex-basis: 50%;
+  text-align: center;
+  cursor: pointer;
+}
+.step_tabs .active_pointer {
+  width: 50%;
+  height: 5px;
+  background: linear-gradient(90deg, rgba(109,56,213,1) 0%, rgba(199,70,231,1) 51%, rgba(121,9,101,1) 100%);
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+}
+.buy_block_steps {
+  padding: 0;
+  display: flex;
+  list-style-type: none;
+  padding-bottom: 22px;
+  overflow: hidden;
+  margin-bottom: 0;
+}
+.buy_block_steps > li {
+  flex-basis: 100%;
+  flex-shrink: 0;
+  background-color: #fafafa;
+  display: flex;
+  flex-direction: column;
+}
+.buy_block_steps h3 {
+  font-size: 23px;
+  margin-top: 12px
+}
+.buy_block_steps .btn-custom {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: auto;
+  justify-self: end;
+}
+.active_pointer, .buy_block_steps > li {
+  transition: transform .2s ease-in-out;
+}
+.buy_block.step_2 .active_pointer{
+  transform: translate(100%);
+}
+.buy_block.step_2 .buy_block_steps > li {
+  transform: translate(-100%);
+}
+.buy_popup_loader {
+  height: 200px;
+  width: 200px;
+}
+.buy_block_bank_logo {
+  max-height: 30px;
+}
+.buy_block_steps p {
+  font-size: 14px;
+}
+.buy_block_pay_types {
+  padding: 10px;
+  border: 1px solid black;
+  border-radius: 10px;
+}
+.buy_block_pay_type {
+   padding: 5px 0;
+}
+.buy_block_owner .checkbox-wrapper, .buy_block_owner label {
+  cursor: pointer;
+}
+.buy_block_pay_type label, .buy_block_pay_type input {
+  cursor: pointer;
+}
+.buy_block_owner {
+  margin-top: 10px;
+}
+.buy_block_owner label:nth-child(2) {
+  margin-right: 25px;
+}
+.present_section {
+  overflow: hidden;
+  transition: max-height 1s ease-in-out;
+  max-height: 0;
+  padding: 4px 0;
+}
+.present_section.active{
+  max-height: 600px;
+}
+.present_section .btn-custom{
+  margin-left: 17px;
+}
+.present_info {
+  display: block;
+  padding: 5px;
+  border: 1px solid #d6d8db;
+  border-radius: 4px;
+  background-color: #e2e3e5;
+}
+.present_info p {
+  margin-bottom: 10px;
+}
+.present_info p:last-child {
+  margin-bottom: 0;
+}
+.present_section .js-link-wrap {
+  position: relative;
+  margin: 10px 0;
+}
+.buy_block .copy_input_button {
+  width: 30px;
+  height: 100%;
+  position: absolute;
+  width: 48px;
+  top: 0;
+  right: 0;
+  background: #6d30df;
+  outline: none !important;
+  text-align: center;
+  padding: 6px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.copy_input_button:before {
+    font-family: "Font Awesome 5 Free";
+    content: "\f0c5";
+    font-size: 20px;
+    color: #ff0;
+    text-decoration: none;
+}
+@media (max-width: 500px) {
+  .buy_block {
+    max-width: 100%;
+    padding: 8px;
+  }
+  .buy_block h3 {
+    font-size: 22px;
+  }
+  .buy_block_steps .btn-custom {
+    margin-top: unset;
+  }
+}

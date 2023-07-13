@@ -1,0 +1,329 @@
+.error {
+    color: red;
+    font-size: 13px;
+    text-align: center;
+    margin: 10px 0;
+}
+.loading {
+    position: relative;
+}
+.tag {
+    display: inline-block;
+    background: #6777ef;
+    color: #fff;
+    padding: 2px 7px;
+    cursor: pointer;
+    margin: 3px;
+}
+.main-sidebar .sidebar-menu li a span sup {
+    display: inline-block;
+    background: red;
+    color: #fff;
+    padding: 4px 5px 2px;
+    border-radius: 18px;
+    line-height: 1;
+}
+.loading:after {
+    content: '';
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(103, 119, 239, 0.53);
+    z-index: 10000;
+    background-image: url(/images/loader.gif);
+    background-size: 100px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.copy-notification {
+    background: #007bff;
+    position: fixed;
+    margin: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 150px;
+    text-align: center;
+    height: 30px;
+    line-height: 30px;
+    color: #fff;
+}
+.checkbox-wrap, .checkbox-wrap + span {
+    display: inline-block;
+    vertical-align: middle;
+    white-space: normal;
+}
+
+.checkbox-container {
+    white-space: nowrap;
+}
+
+.checkbox-wrap {
+    position: relative;
+    width: 20px;
+    height: 20px;
+    border: 1px solid #ccc;
+    margin-right: 9px;
+}
+
+.checkbox-wrap input {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    z-index: 10;
+}
+
+.checkbox-wrap input:checked + span {
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    background: blue;
+    left: 2px;
+    top: 2px;
+}
+.js-section-row-template {
+    display: none;
+}
+.js-section-hide {
+    /*display: none;*/
+}
+.js-left {
+    position: absolute;
+    color: red;
+    font-size: 11px;
+    bottom: -17px;
+    left: 15px;
+}
+.text-small {
+    font-size: 12px;
+}
+.btn.btn-xs {
+    font-size: 9px;
+    padding: 3px 9px;
+    margin: 2px;
+}
+#progress {
+    display: none;
+}
+.progress {    
+    position: fixed;
+    bottom: 10px;
+    left: 2%;
+    width: 96%;
+    z-index: 1000000;
+}
+
+.preview {
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    background-size: cover;
+    position: relative;
+    background-position: center;
+}
+.preview  a {
+    position: absolute;
+    right: 0;
+    background: red;
+    color: #fff;
+    line-height: 1;
+    padding: 0 6px 3px;
+    border-radius: 12px;
+    top: 0;
+}
+.js-section-row, .js-sub-section-row {
+    position: relative;
+    padding-bottom: 45px !important;
+}
+
+.js-sub-category-btns {
+    position: absolute;
+    bottom: 11px;
+}
+.js-interval-start-info {
+    display: none;
+}
+.bg-wrap {
+    background-size: cover;
+    background-position: center;
+}
+.user-slider-item {
+    height: 0;
+    padding-bottom: 37%;
+    background-size: cover;
+    background-position: center;
+}
+.select2-container .select2-selection--single {
+    height: 38px;
+}
+
+.select2-container--default .select2-selection--single .select2-selection__rendered {
+    line-height: 38px;
+}
+
+.select2-container--default .select2-selection--single .select2-selection__arrow {
+    height: 100%;
+}
+.avatar-preview {
+    width: 150px;
+    height: 150px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 90px;
+    margin: 0 auto 13px;
+}
+.nav-link {
+    position: relative;
+}
+
+.nav-link sup {
+    background: red;
+    color: #fff;
+    padding: 1px 3px 3px;
+    border-radius: 15px;
+    position: absolute;
+    right: 0;
+    line-height: 1;
+    top: 0;
+    font-size: 9px;
+}
+label sup {
+    color: red;
+    font-weight: bold;
+    font-size: 13px;
+}
+
+.reminder {
+    color: red;
+}
+.packages-wrap {
+    margin: 12px 0;
+    background: #e8e8e8;
+    padding: 10px;
+}
+
+.package-item {
+    height: 200px;
+    border: 1px solid #949494;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 10px;
+}
+
+.package-name {
+    font-weight: bold;
+    padding: 10px 0;
+}
+.package-add a:hover {
+    color: #000;
+    text-decoration: none;
+}
+.package-add a {
+    font-weight: bold;
+    font-size: 50px;
+}
+.package-add.package-add-sm a {
+    font-size: 20px;
+    line-height: 1;
+    margin: 20px 0;
+    display: block;
+}
+.custom-file-label {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.preview-item-sm {
+    width: 75px;
+    height: 75px;
+    background-size: cover;
+    background-position: center;
+    display: inline-block;
+    margin: 5px;
+    position: relative;
+    margin-bottom: 17px;
+}
+.preview-item-sm input {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+    opacity: 0;
+}
+
+.preview-item-sm input:checked + span {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 100;
+    box-shadow: 0px 0px 6px 2px #a32aef;
+}
+.preview-item-sm a {
+    position: absolute;
+    bottom: -19px;
+    font-size: 12px;
+    text-align: center;
+    left: 0;
+    width: 100%;
+    color: red;
+    line-height: 1;
+}
+.tag-item {
+    display: inline-block;
+    background: #e0eaf1;
+    padding: 5px 16px;
+    line-height: 1;
+    margin: 3px;
+    cursor: pointer;
+}
+.preview-item-sm input[type="text"] {
+    z-index: -3;
+}
+ul.course-section-wrap {
+    list-style-type: none;
+    padding: 0;
+    margin: 0 0 20px;
+}
+
+.course-section-name {
+    position: relative;
+    border: 1px dashed;
+    margin-bottom: 8px;
+    font-size: 20px;
+    padding: 3px 0 3px 42px;
+    cursor: pointer;
+}
+
+.course-section-name:before {
+    content: '+';
+    position: absolute;
+    left: 6px;
+    top: 1px;
+    font-weight: 900;
+    font-size: 28px;
+    line-height: 1;
+}
+.course-section-name.opened:before {
+    content: '-';
+}
+@media (max-width: 768px) {
+    .custom-switch {
+        padding-left: 1.15rem;
+    }
+    .custom-switch-indicator {
+        min-width: 36px;
+    }
+}

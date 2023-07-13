@@ -1,0 +1,6 @@
+/.idea
+*.log*
+templates
+/nbproject
+*.zip
+*.sql

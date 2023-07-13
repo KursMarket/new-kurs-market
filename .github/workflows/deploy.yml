@@ -1,0 +1,40 @@
+#name: KursMarket App
+#on:
+#  push:
+#    branches:
+#      - main
+#jobs:
+#  deploy:
+#    runs-on: ubuntu-18.04
+#    steps:
+#      - name: Get repository code
+#        uses: actions/checkout@v3
+#      - name: Install dependencies
+#        run: cd frontend && npm ci
+#      - name: Build Application
+#        run: cd frontend && npm run build
+#      - name: Deploy
+#        uses: appleboy/ssh-action@master
+#        with:
+#          host: ${{ secrets.HOST }}
+#          username: ${{ secrets.USERNAME }}
+#          password: ${{ secrets.PASSWORD }}
+#          port: ${{ secrets.PORT }}
+#          script: |
+#            # Copy and build new version
+#            cp -r frontend frontend-new
+#            cd frontend-new
+#            git checkout production
+#            git fetch --all
+#            git reset --hard origin/production
+#            npm install --only=production
+#            npm run build
+#            # Replace current version with the new one
+#            cd ..
+#            mv frontend frontend-old
+#            mv frontend-new frontend
+#            # Restart server
+#            cd frontend
+#            pm2 kill
+#            pm2 start "npm run start" --name KursMarket
+#            rm -rf ../frontend-old
